@@ -46,3 +46,12 @@ span {
     font-size: 0,1em;
     color: grey;
 }
+
+.container-fluid {
+    background-color: #660066;
+    color: #ffffff;
+}
+
+.trabajos hr {
+    color: #ffffff;
+}
