@@ -11,27 +11,32 @@ body * {
     background-color: var(--purple);
 }
 
-.hero-section {
+#inicio {
     text-align: right;
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
     background-image: url(../img/IMG_9254\ 2.jpg); /*agregar foto!!*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #ffffff;
-    text-shadow: 0.125em 0.25em 0.125em #707070;
-    padding: 190px 190px;
+    height: 85vh;
+    width: 100%;
     
 }
 
-.background-image {
-    width: 50%;
-}
-
-.hero-section h1 {
+#inicio h1 {
     font-weight: bold;
 }
 
-.hero-section h2 {
+#inicio h2 {
     font-weight: lighter;
+}
+
+#inicio hr{
+    height: 0.4rem;
+    background-color: #ffffff;    
 }
 
 h2 {
@@ -48,10 +53,18 @@ span {
 }
 
 .container-fluid {
-    background-color: #660066;
+    background-color: var(--purple);
     color: #ffffff;
 }
 
-.trabajos hr {
+#trabajos {
+    background-color: var(--purple);
+}
+#trabajos hr {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: var(--purple);
     color: #ffffff;
 }
