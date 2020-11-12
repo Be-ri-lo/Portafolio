@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +15,16 @@
         <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top">
-      <div class="container px-5">
-          <a class="navbar-brand navbar-text text-white ml-5" href="#"><p class="icon">Beatriz</p></a>
+    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top background">
+      <div class="container mx-5">
+          <a class="navbar-brand navbar-text text-white ml-0" href="#inicio">Beatriz</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        <div class="collapse navbar-collapse mr-5" id="navbarNav">
-          <ul class="navbar-nav ml-auto mr-5">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto ml-5">
             <li class="nav-item">
               <a class="nav-link text-white" href="#Sobre-mi">Sobre mi</a>
             </li>
@@ -31,7 +32,7 @@
               <a class="nav-link text-white" href="#Experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#Trabajos">Trabajos</a>
+              <a class="nav-link text-white" href="#trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#contacto">Contacto</a>
@@ -40,48 +41,48 @@
         </div>
       </div>
     </nav>
-    <!--agregar un jumbotron para el nombre-->
     
     <header id="inicio">
-      <div class="jumbotron">
-        <div class="container">
-          <h2 class="display-3 text-right">YO SOY</h2> 
-          <hr class="m-0">
-          <h1 class="display-2">Beatriz</h1>
+        <div class="container text-right">
+          <h2 class="display-3 mr-3 mb-0">YO SOY</h2> 
+          <hr class="m-3 ml-auto">
+          <h1 class="display-2 mr-0 mt-0 mb-5">Beatriz</h1>
         </div>
-      </div>
     </header>
 
 
     <section id="Sobre-mi">
 
     <div class="container d-none d-sm-block d-sm-none d-md-block">
-      <h3 class="text-center p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> error consectetur sunt perferendis dolorum.</h3>
+      <h3 class="text-center p-5 content-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> error consectetur sunt perferendis dolorum.</h3>
       <hr class="m-3">
         <div class="row ">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi, veniam voluptate minima molestias consectetur eos sed ut nemo aliquam quod id deserunt quae quos laboriosam laudantium ducimus, ullam velit?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis tempora reiciendis consectetur laudantium laboriosam similique ipsa nesciunt ab iure sequi architecto, dignissimos sunt recusandae deserunt suscipit quam reprehenderit corporis., Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nam, voluptates alias officiis ratione laudantium quis eaque. Minus aspernatur, nostrum fugit eligendi quam optio! Maiores sit sunt consequuntur soluta expedita.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, animi harum incidunt quod qui, velit asperiores sit molestiae tenetur ipsa magnam accusamus quas eius aliquam doloremque veritatis optio, expedita eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum pariatur rem odio laudantium dolorum, vitae ad placeat, maxime voluptas cupiditate laboriosam nobis quibusdam debitis a dolorem, soluta alias blanditiis nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, odio, reprehenderit quas consequatur labore magnam debitis modi incidunt perspiciatis accusamus repudiandae, perferendis culpa et iste ullam aliquam molestiae dolorum eius!</p>
           </div>
         </div>        
     </section>
 
-    <section id="Experiencia" class="container">
-        <h2 class="text-center p-5">Mi Experiencia</h2>
-        <hr class="m-3">
+    <section id="Experiencia" class="container my-5"> <!--Preguntar por que no se ve tooltip negro-->
+        <h2 class="display-4 text-center p-5">Mi Experiencia</h2>
+        <hr class="w-25">
       <div class="row m-5">
-        <div class="text-center col-md-4">
-          <p><i class="fas fa-map-marked-alt fa-3x p-4"></i> <br> Guia de Turismo</p>
+        <div class="text-center col-sm-4 mb-4">
+          <i class="fas fa-map-marked-alt fa-3x p-4" data-toggle="tooltip" data-placement="right" title="Enseñando Lugares"></i> 
+          <p> Guia de Turismo</p>
           <span class="m-0">2007- a la fecha</span>
         </div>
-        <div class="text-center col-md-4">
-          <p><i class="fas fa-plane-departure fa-3x p-4"></i> <br> Tripulante de Cabina</p>
+        <div class="text-center col-sm-4">
+          <i class="fas fa-plane-departure fa-3x p-4" data-toggle="tooltip" data-placement="right" title="Seguridad y Servicio"></i> 
+          <p> Tripulante de Cabina</p>
           <span class="m-0">2010-2020</span>
         </div>
-        <div class="text-center col-md-4">
-          <p><i class="fas fa-code fa-3x p-4"></i> <br> Desarrolladora Full Stack</p>
+        <div class="text-center col-sm-4">
+          <p><i class="fas fa-code fa-3x p-4" data-toggle="tooltip" data-placement="right" title="Creando y Manteniendo"></i> 
+          <p> Desarrolladora Full Stack</p>
           <span class="m-0">2020- a la fecha</span>
         </div>
       </div>
@@ -89,17 +90,12 @@
  
     </section>
 
-    <section id="trabajos" class="my-5">
-      <div class="container-fluid">
-        <div class="text-center m-3">
-          <h2 class="p-5">Mis últimos trabajos</h2>
-          <hr class="m-3 ">
-        </div>
-      </div>
-
+    <section id="trabajos" class="pb-5 mt-5 background">   <!--probar con el collapse-->
+          <h2 class="display-4 text-center mt-5 text-white">Mis últimos trabajos</h2>
+          <hr class="w-25 ">
+     
     <!--Card 1-->
-
-      <div class="card-deck m-3 p-3">
+      <div class="card-deck m-3 p-3 card-deck-expand-lg">
 
         <div class="card">
           <img class="card-img-top" src="assets/img/meet_coffee.png" alt="meet_coffee">
@@ -132,7 +128,7 @@
 
     <!--Card 2-->
 
-      <div class="card-deck mx-3 px-3 my-5">
+      <div class="card-deck mx-3 px-3 mt-2 mb-5">
 
         <div class="card" >
           <img class="card-img-top" src="assets/img/cuppon.png" alt="cuppon">
@@ -160,36 +156,36 @@
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-
       </div>
-
     </section>
 
     <section id="contacto" class="mt-5">
       
         <h2 class="display-4 text-center">Contacto</h2>
-        <hr class="mb-5">
-        <p class="text-center my-5">¿Quieres conocer más de mi?</p>
-      
+        <hr class="w-25">
+        <div class="text-center">
+          <p class="text-center my-5">¿Quieres conocer más de mi?</p>
+          <a class="typeform-share button" href="https://form.typeform.com/to/TKjtC3dz" data-mode="popup" 
+          style="display:inline-block;text-decoration:none;background-color:#767598;color:white;cursor:pointer;font-family:`Dosis`Helvetica,Arial,sans-serif;font-size:15px;line-height:37.5px;text-align:center;margin:0;height:37.5px;padding:0px 25px;border-radius:18px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Comenzar</a> 
+        </div>
 
 
     </section>
 
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-sd-6 mt-4">
-          <h3 class="text-center mx-2"> BEATRIZ</h3>
+    <footer class="mt-0"> <!--pendiente arreglar footer!-->
+      <div class="container background">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <h3 class="py-3 text-white">BEATRIZ</h3>
+          </div>
+          <div class="col-sm-6 text-center icons">
+            <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin "></i></a>
+            <a target="_blank" href="https://www.github.com"><i class="fab fa-github-square "></i></a>
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook "></i></a>
+            <a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square "></i></a>
+          </div>
         </div>
-
-        <div class="row col-sd-2 mt-4">
-          <a target="" href=""><i class="fab fa-linkedin fa-2x"></i></a>
-          <a target="" href=""><i class="fab fa-github-square fa-2x"></i></a>
-          <a target="" href=""><i class="fab fa-facebook fa-2x"></i></a>
-          <a target="" href=""><i class="fab fa-facebook fa-2x"></i></a>
-        </div>
-
-      </div>
-      
+      </div>  
     </footer>
 
     <!--Jquery 3.5.1 no slim-->
