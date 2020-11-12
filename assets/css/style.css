@@ -64,7 +64,19 @@ span {
     background-color: #ffffff;
 }
 
+#contacto {
+    height: 50vh;
+}
+
+#contacto div {
+    padding-top: 10vh;
+}
 footer {
     background-color: var(--purple);
     color: #ffffff;
+    height: 20vh;
 }
+ footer icon {
+     text-decoration: none;
+     
+ }
