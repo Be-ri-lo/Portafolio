@@ -50,7 +50,7 @@ html { /**/
     letter-spacing: 0.2rem
 }
 
-h2 {
+#trabajos h2 {
     font-weight: bold;
 }
 
@@ -72,11 +72,19 @@ span {
     background-color: black;
 }
 
+#Experiencia h2 {
+    font-weight: bold;
+}
+
 #trabajos {
     background-color: var(--purple);
 }
 #trabajos hr {
     background-color: #ffffff;
+}
+
+.card-tittle h5 {
+    text-decoration-line: line-through;  /*revisar*/
 }
 
 #contacto {
@@ -85,6 +93,10 @@ span {
 
 #contacto div {
     padding-top: 10vh;
+}
+
+#contacto h2 {
+    font-weight: bold;
 }
 
 footer {
