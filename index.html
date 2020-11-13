@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top background">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark text-white fixed-top background">
       <div class="container mx-5">
-          <a class="navbar-brand navbar-text text-white ml-0" href="#inicio">Beatriz</a>
+          <a class="navbar-brand name-text text-white ml-0" href="#inicio"><h3>Beatriz</h3></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto ml-5">
+          <ul class="navbar-nav ml-auto ml-5 mr-0 nav nav-pills">
             <li class="nav-item">
               <a class="nav-link text-white" href="#Sobre-mi">Sobre mi</a>
             </li>
@@ -43,19 +43,21 @@
     </nav>
     
     <header id="inicio">
-        <div class="container text-right">
-          <h2 class="display-3 mr-3 mb-0">YO SOY</h2> 
-          <hr class="m-3 ml-auto">
-          <h1 class="display-2 mr-0 mt-0 mb-5">Beatriz</h1>
+        <div class="container text-right" data-spy="scroll" data-target="#navbar-example2" data-offset=""> <!--Intenté agregar un Scrollspy, pero no me resultó, probar mas adelate-->
+          <h2 class="display-5 mb-3">Yo Soy</h2> 
+          
+          <h1 class="display-3 mr-0 mt-0 mb-5 ml-5 name-text">Beatriz</h1>
         </div>
     </header>
 
 
-    <section id="Sobre-mi">
+    <section id="Sobre-mi" data-spy= "scroll" data-target="#navbar-example2" data-offset="">
 
-    <div class="container d-none d-sm-block d-sm-none d-md-block">
-      <h3 class="text-center p-5 content-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> error consectetur sunt perferendis dolorum.</h3>
-      <hr class="m-3 w-25">
+    <div class="container d-none d-sm-block d-sm-none d-md-block" >
+      <h3 class="text-center pt-5 content-header">Soy Beatriz López Casanova. 
+      <h3 class="text-center  content-header"> Nací un día 25 de Marzo del año 1988,</h3> 
+      <h3 class="text-center pb-5 content-header">en la bella ciudad de Santiago.</h3>
+      <hr class="mb-5 w-25 text-center">
         <div class="row ">
           <div class="col-sm-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi, veniam voluptate minima molestias consectetur eos sed ut nemo aliquam quod id deserunt quae quos laboriosam laudantium ducimus, ullam velit?, Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis tempora reiciendis consectetur laudantium laboriosam similique ipsa nesciunt ab iure sequi architecto, dignissimos sunt recusandae deserunt suscipit quam reprehenderit corporis., Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nam, voluptates alias officiis ratione laudantium quis eaque. Minus aspernatur, nostrum fugit eligendi quam optio! Maiores sit sunt consequuntur soluta expedita.</p>
@@ -66,7 +68,7 @@
         </div>        
     </section>
 
-    <section id="Experiencia" class="container my-5"> <!--Preguntar por que no se ve tooltip negro-->
+    <section id="Experiencia" class="container my-5" data-spy= "scroll" data-target="#navbar-example2" data-offset=""> <!--Preguntar por que no se ve tooltip negro-->
         <h2 class="display-4 text-center mt-4 p-5 font-weight-bold ">Mi Experiencia</h2>
         <hr class="w-25">
       <div class="row m-5">
@@ -91,69 +93,59 @@
     </section>
 
     <section id="trabajos" class="pb-5 mt-5 background">   <!--probar con el collapse-->
-          <h2 class="display-4 text-center p-5 text-white">Mis últimos trabajos</h2>
-          <hr class="w-25 ">
-     
+        <h2 class="display-4 text-center p-5 text-white">Mis últimos trabajos</h2>
+        <hr class="w-25 ">
     <!--Card 1-->
-      <div class="display-5 card-deck mx-5 p-5 my-0 card-deck-expand-lg">
-
-        <div class="card p-3 m-5">
+      <div class="display-5 card-deck mx-5 p-5 my-0">
+        <!--foto1-->
+        <div class="card rounded">
           <img class="card-img-top" src="assets/img/meet_coffee.png" alt="meet_coffee">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Meet&Coffee</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. 
-                                This content is a little bit longer.</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
-
-        <div class="card p-3 m-5">
+        <!--foto2-->
+        <div class="card">
           <img class="card-img-top" src="assets/img/iguana_page.png" alt="iguana_page">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Iguana page</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
           </div>
         </div>
-
-        <div class="card p-3 m-5">
+        <!--foto3-->
+        <div class="card">
           <img class="card-img-top" src="assets/img/suricata.png" alt="suricata">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Suricata</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
           </div>       
         </div>
-
       </div>
-
     <!--Card 2-->
-
       <div class="card-deck mx-5 px-5 mt-2 mb-5">
-
-        <div class="card p-3 m-5" >
+        <!--foto4-->
+        <div class="card" >
           <img class="card-img-top" src="assets/img/cuppon.png" alt="cuppon">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Cuppon</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
           </div>
         </div>
-
-        <div class="card p-3 m-5">
+        <!--foto5-->
+        <div class="card">
           <img class="card-img-top" src="assets/img/ricomida.png" alt="ricomida">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Ricomida</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
           </div>
         </div>
-
-        <div class="card p-3 m-5">
+        <!--foto6-->
+        <div class="card">
           <img class="card-img-top" src="assets/img/dmark.png" alt="dmark">
-          <div class="card-body">
+          <div class="card-body d-none d-sm-block d-sm-none d-md-block">
             <h5 class="card-title text-center mt-3">Portafolio</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
           </div>
         </div>
       </div>
@@ -171,13 +163,13 @@
 
     </section>
 
-    <footer class="background"> <!--pendiente arreglar footer!-->
-      <div class="container pb-3">
+    <footer class="background">
+      <div class="container">
         <div class="row">
           <div class="col-sm-6 text-center">
-            <h3 class="py-3 text-white">BEATRIZ</h3>
+            <h3 class="pt-3 text-white name-text">Beatriz</h3>
           </div>
-          <div class="col-sm-6 text-center icons">
+          <div class="col-sm-6 text-center icons d-none d-sm-block d-sm-none d-md-block">
             <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin "></i></a>
             <a target="_blank" href="https://www.github.com"><i class="fab fa-github-square "></i></a>
             <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook "></i></a>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
-body * {
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+body {
     font-family: "Dosis", sans-serif;
 }
 
@@ -7,33 +9,29 @@ html { /**/
     scroll-behavior: smooth;
 }
 
-:root {
-   --purple: #767598;
+.name-text {
+    font-family: "Amita", sans-serif;
+    font-weight: bold;
+    font-style: italic;   
 }
-
-.navbar {
-    background-color: var(--purple);
-}
-
 
 #inicio {
-    text-align: right;
-    justify-content: right;
+    justify-content: center;
     display: flex;
     align-items: flex-end;
-    background-image: url(../img/IMG_9254\ 2.jpg); /*agregar foto!!*/
+    background-image: url(../img/IMG_9254\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:;
     color: #ffffff;
-    height: 90vh;
-    width: 100%; 
-      
+    height: 85vh; 
+    text-shadow: 2px 2px #44558a;      
 }
 
 #inicio h1 {
     font-weight: bold;
     letter-spacing: 0.2rem;
+    font-style: italic;
 }
 
 #inicio h2 {
@@ -42,8 +40,12 @@ html { /**/
 }
 
 #inicio hr {
-    width: 20%;
-    background-color: #ffffff; 
+    height: 3%;
+    width: 23%;
+    background-color: #44558a; 
+}
+header {
+    min-width: 326px;
 }
 
 #Sobre-mi {
@@ -52,6 +54,18 @@ html { /**/
 
 #trabajos h2 {
     font-weight: bold;
+}
+
+.fa-map-marked-alt {
+    color: #44558a;
+}
+
+.fa-plane-departure {
+    color: #44558a;
+}
+
+.fa-code {
+    color: #44558a;
 }
 
 h3 {
@@ -69,7 +83,7 @@ span {
 }
 
 #Experiencia hr {
-    background-color: black;
+    background-color: #44558a;
 }
 
 #Experiencia h2 {
@@ -80,13 +94,14 @@ span {
     background-color: var(--purple);
 }
 #trabajos hr {
-    background-color: #ffffff;
+    background-color: #cfa4b7;
 }
 
-.card-tittle h5 {
-    text-decoration-line: line-through;  /*revisar*/
+#trabajos h5 {
+    font-weight: bold;
+    text-decoration: line;  /*revisar*/
 }
-
+    
 #contacto {
     height: 50vh;
 }
@@ -99,11 +114,15 @@ span {
     font-weight: bold;
 }
 
+#contacto hr {
+    background-color: #cfa4b7;
+}
+
 footer {
     height: 10vh;
     width: 100%;
 }
- footer .icons {
+footer .icons {
      font-size: 3rem;  
 }
 
@@ -116,9 +135,17 @@ html { /**/
 }
 
 .background {
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,112,153,1) 0%, rgba(71,72,88,1) 0%, rgba(147,123,181,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,112,153,1) 0%, rgba(71,72,88,1) 0%, rgba(147,123,181,1) 100%);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,112,153,1) 0%, rgba(71,72,88,1) 0%, rgba(147,123,181,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#937bb5",GradientType=1);
+    background: rgb(207,164,183);
+    background: -moz-linear-gradient(27deg, rgba(207,164,183,1) 3%, rgba(68,85,138,1) 57%);
+    background: -webkit-linear-gradient(27deg, rgba(207,164,183,1) 3%, rgba(68,85,138,1) 57%);
+    background: linear-gradient(27deg, rgba(207,164,183,1) 3%, rgba(68,85,138,1) 57%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfa4b7",endColorstr="#44558a",GradientType=1);
 }
+
+/*Prueba*/
+
+.navbar a:hover {
+    background-color:#706e98;
+    color: black;
+    border-radius: 50px;
+  }

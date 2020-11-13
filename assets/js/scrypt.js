@@ -10,7 +10,6 @@
         $(".card-text").toggle("slow", function () {
     })
  
-
 })
 
 
